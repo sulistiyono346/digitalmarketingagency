@@ -1,0 +1,21 @@
+$primary: #ee4e39;
+$secondary: #8b919e;
+$light: #9a9ea8;
+$dark: #3f4352;
+$white: #ffffff;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+// global variable
+
+@import "~bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,24 @@
+@import "./custom.scss";
+
+@function color($color-name, $color-opacity) {
+  @return rgba($color-name, $color-opacity);
+}
+
+@mixin colors-all-font {
+  color: $dark;
+  &.primary {
+    color: color($primary, 1);
+  }
+  &.secondary {
+    color: color($secondary, 1);
+  }
+  &.light {
+    color: color($light, 1);
+  }
+  &.dark {
+    color: color($dark, 1);
+  }
+  &.white {
+    color: color($white, 1);
+  }
+}

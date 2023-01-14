@@ -1,0 +1,14 @@
+@import "../../../Assets/Styles/custom.scss",
+  "../../../Assets/Styles/helpers.scss";
+
+.c-h5 {
+  font-size: 14px;
+  line-height: 18.23px;
+  @media (max-width: 575.98px) {
+    font-size: 12px;
+  }
+  @include colors-all-font;
+  &.400 {
+    font-weight: 400;
+  }
+}

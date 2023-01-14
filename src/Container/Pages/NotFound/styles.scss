@@ -1,0 +1,30 @@
+@import "../../../Assets/Styles/custom.scss",
+  "../../../Assets/Styles/helpers.scss";
+
+.p-not-found {
+  position: relative;
+  .container {
+    padding: 10rem;
+    @media (max-width: 991.98px) {
+      margin-top: 5rem;
+      padding: 0 2rem;
+    }
+  }
+
+  .button-container {
+    margin-top: 20px;
+  }
+  .left-container {
+    background-color: $white;
+  }
+  .chart-ilustration {
+    position: absolute;
+    top: 22rem;
+    z-index: 1;
+  }
+  .person-ilustration {
+    position: absolute;
+    top: 6rem;
+    z-index: 2;
+  }
+}

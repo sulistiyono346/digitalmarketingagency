@@ -1,0 +1,23 @@
+@import "../../../Assets/Styles/custom.scss",
+  "../../../Assets/Styles/helpers.scss";
+
+.s-our-team {
+  margin: 6rem 0;
+  &.container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 10rem;
+    @media (max-width: 991.98px) {
+      padding: 60px 2rem;
+    }
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+    }
+  }
+}

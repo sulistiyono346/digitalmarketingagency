@@ -1,0 +1,17 @@
+@import "../../../../Assets/Styles/custom.scss",
+  "../../../../Assets/Styles/helpers.scss";
+
+.s-card-team {
+  width: fit-content;
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 11px;
+  min-width: 230px;
+  padding: 10px;
+  margin: 8px;
+  .icon {
+    padding-right: 11px;
+  }
+}

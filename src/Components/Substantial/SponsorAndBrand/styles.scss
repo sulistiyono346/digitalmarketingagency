@@ -1,0 +1,9 @@
+@import "../../../Assets/Styles/custom.scss",
+  "../../../Assets/Styles/helpers.scss";
+
+.s-sponsor-brand {
+  margin: 6rem 0;
+  &.container {
+    display: flex;
+  }
+}

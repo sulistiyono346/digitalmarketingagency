@@ -1,0 +1,18 @@
+@import "../../../../Assets/Styles/custom.scss",
+  "../../../../Assets/Styles/helpers.scss";
+
+.s-card-hero-section {
+  width: fit-content;
+  background-color: $white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 11px;
+  min-width: 14rem;
+  padding: 10px;
+  margin: 8px;
+  cursor: pointer;
+  .icon {
+    padding-right: 11px;
+  }
+}

@@ -1,0 +1,23 @@
+@import "../../../../Assets/Styles/custom.scss",
+  "../../../../Assets/Styles/helpers.scss";
+
+.s-card-services {
+  width: fit-content;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 11px;
+  padding: 10px;
+  margin: 8px;
+  min-width: 280px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 5px 7px 9px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 7px 9px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 7px 9px 3px rgba(0, 0, 0, 0.1);
+  }
+  .icon {
+    padding: 11px;
+  }
+}
