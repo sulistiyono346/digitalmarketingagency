@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import { useSelector, useDispatch, shallowEqual } from "react-redux";
+
 import {
   HeroSection,
   OurServices,
@@ -5,17 +8,28 @@ import {
   SeoSection,
   SponsorAndBrand,
 } from "Components";
-
-import React from "react";
+import { actionGetUser } from "Redux/Actions/Home";
 
 const Home = () => {
+  const dispatch = useDispatch();
+  const { users } = useSelector(
+    ({ home }) => ({
+      users: home.users,
+    }),
+    shallowEqual
+  );
+
+  useEffect(() => {
+    dispatch(actionGetUser());
+  }, [dispatch]);
+
   return (
     <div className="home-container">
       <HeroSection />
       <SponsorAndBrand />
       <SeoSection />
       <OurServices />
-      <OurTeams />
+      <OurTeams users={users} />
     </div>
   );
 };

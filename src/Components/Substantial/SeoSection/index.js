@@ -8,7 +8,7 @@ import { ReactComponent as Chart } from "Assets/Images/seo-section-chart.svg";
 import Person from "Assets/Images/seo-section-person.svg";
 
 import "./styles.scss";
-import useBreakpoint from "Config/helpers/useBreakpoint";
+import useBreakpoint from "Config/Helpers/useBreakpoint";
 
 export default function SeoSection() {
   const breakpoint = useBreakpoint();
