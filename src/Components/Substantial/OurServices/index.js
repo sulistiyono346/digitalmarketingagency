@@ -46,7 +46,12 @@ export default function OurServices() {
       </Text>
       <div className="card-container">
         {services.map((val, key) => (
-          <CardServices icon={val.icon} label={val.label} alt={val.alt} />
+          <CardServices
+            key={key}
+            icon={val.icon}
+            label={val.label}
+            alt={val.alt}
+          />
         ))}
       </div>
     </Container>

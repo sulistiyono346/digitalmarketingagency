@@ -5,7 +5,7 @@ import { ReactComponent as Esprit } from "Assets/Images/sponsor-esprit.svg";
 import { ReactComponent as Groupe } from "Assets/Images/sponsor-groupe.svg";
 import "./styles.scss";
 import { Container, Stack } from "react-bootstrap";
-import useBreakpoint from "Config/helpers/useBreakpoint";
+import useBreakpoint from "Config/Helpers/useBreakpoint";
 
 export default function SponsorAndBrand() {
   const breakpoint = useBreakpoint();

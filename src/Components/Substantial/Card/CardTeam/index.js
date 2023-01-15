@@ -7,7 +7,11 @@ export default function CardTeam({ icon, name, position, alt }) {
   return (
     <div className="s-card-team shadow p-3 mb-5 bg-white rounded">
       <div className="icon">
-        <img src={icon} alt={alt} />
+        <img
+          src={icon}
+          alt={alt}
+          style={{ height: "42px", width: "42px", marginTop: "-10px" }}
+        />
       </div>
       <div className="label">
         <Text size="fz-2">{name}</Text>

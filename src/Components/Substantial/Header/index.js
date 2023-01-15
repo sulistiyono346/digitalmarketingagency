@@ -8,7 +8,7 @@ import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { ReactComponent as Alert } from "Assets/Images/alert.svg";
 
 import "./styles.scss";
-import useBreakpoint from "Config/helpers/useBreakpoint";
+import useBreakpoint from "Config/Helpers/useBreakpoint";
 
 export default function Header() {
   const breakpoint = useBreakpoint();
@@ -24,8 +24,6 @@ export default function Header() {
       enablePageScroll();
     }
   };
-
-  console.log("isChecked", isChecked);
 
   return (
     <div className="s-header-container my-scrollable-element">
@@ -79,7 +77,7 @@ export default function Header() {
               <Alert />
             </div>
             <div className="buger-container">
-              <label className="hamb" for="side-menu">
+              <label className="hamb" htmlFor="side-menu">
                 <span className="hamb-line"></span>
               </label>
             </div>
