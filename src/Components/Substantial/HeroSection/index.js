@@ -4,9 +4,7 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 // Component
 import { Button, H1, H5, Text, CardHeroSection } from "Components";
 // Assets
-// import { ReactComponent as Arrow } from "Assets/Images/arrow.svg";
 import socialMedia from "Assets/Images/digixine-social-media-organize.svg";
-// import HeroSectionBg from "Assets/Images/hero-section-bg.png";
 
 import "./styles.scss";
 
@@ -38,10 +36,10 @@ export default function HeroSection() {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6}>
-            <H5 color="primary" weight={400}>
+            <H5 color="primary" weight="light">
               PT. Digital Media Nusantara
             </H5>
-            <H1 weight={800}>Digital Marketing Agency</H1>
+            <H1 weight="bold">Digital Marketing Agency</H1>
             <Text color="secondary">
               We examine the top of funnel to figure out how to make people to a
               subscribe newsletter then turn prospects into leads.
@@ -56,7 +54,7 @@ export default function HeroSection() {
               {services.map((val, key) => (
                 <CardHeroSection
                   key={key}
-                  icon={val.icon}
+                  Icon={val.icon}
                   label={val.label}
                   alt={val.alt}
                 />

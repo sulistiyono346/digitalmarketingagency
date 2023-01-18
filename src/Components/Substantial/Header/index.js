@@ -1,11 +1,9 @@
-// import { Button } from "Components/Common";
 import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
-import { ReactComponent as Logo } from "Assets/Images/logo.svg";
-import { ReactComponent as Chat } from "Assets/Images/chat-mail.svg";
+import Logo from "Assets/Images/logo.svg";
+import Chat from "Assets/Images/chat-mail.svg";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-// import { ReactComponent as BurgerMenu } from "Assets/Images/burger-menu.svg";
-import { ReactComponent as Alert } from "Assets/Images/alert.svg";
+import Alert from "Assets/Images/alert.svg";
 
 import "./styles.scss";
 import useBreakpoint from "Config/Helpers/useBreakpoint";

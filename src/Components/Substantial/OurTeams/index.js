@@ -65,7 +65,7 @@ export default function OurTeams({ users }) {
   // ];
   return (
     <Container className="s-our-team justify-content-center align-items-center">
-      <H4 weight={700}>Our Teams</H4>
+      <H4 weight="bold">Our Teams</H4>
       <div className="card-container">
         {users.map((val, key) => (
           <CardTeam

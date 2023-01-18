@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 // Component
 import { H1, Text } from "Components";
 // Assets
-import { ReactComponent as Chart } from "Assets/Images/seo-section-chart.svg";
+import Chart from "Assets/Images/seo-section-chart.svg";
 import Person from "Assets/Images/seo-section-person.svg";
 
 import "./styles.scss";
@@ -25,10 +25,10 @@ export default function SeoSection() {
             <div className="person-ilustration">
               {isMobile ? (
                 <>
-                  <img src={Person} alt="person" width="70%" />
+                  <Person />
                 </>
               ) : (
-                <img src={Person} alt="person" width="100%" />
+                <Person />
               )}
             </div>
           </Col>
@@ -37,7 +37,7 @@ export default function SeoSection() {
               Search Engine Optimization
             </Text>
 
-            <H1 weight={800}>Improve Performance and Growth your Website</H1>
+            <H1 weight="bold">Improve Performance and Growth your Website</H1>
             <Text color="secondary">
               It's a theory of psychology that prioritizes the most fundamental
               human needs (​like air, water, and physical safety) over more

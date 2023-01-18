@@ -3,11 +3,11 @@ import { Text } from "Components/Common";
 
 import "./styles.scss";
 
-export default function CardHeroSection({ icon, label, alt }) {
+export default function CardHeroSection({ Icon, label, alt }) {
   return (
     <div className="s-card-hero-section">
       <div className="icon">
-        <img src={icon} alt={alt} />
+        <Icon />
       </div>
       <div className="label">
         <Text size="fz-2">{label}</Text>
