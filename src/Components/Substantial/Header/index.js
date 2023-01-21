@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import * as RouteUrl from "Config/Routes/routes";
 import { Nav } from "react-bootstrap";
 import Logo from "Assets/Images/logo.svg";
 import Chat from "Assets/Images/chat-mail.svg";
@@ -9,6 +11,7 @@ import "./styles.scss";
 import useBreakpoint from "Config/Helpers/useBreakpoint";
 
 export default function Header() {
+  const navigate = useNavigate();
   const breakpoint = useBreakpoint();
   const [isChecked, setChecked] = useState(false);
   const size = ["xs", "sm", "md"];
@@ -23,6 +26,10 @@ export default function Header() {
     }
   };
 
+  const handleNavigation = (nav, param) => {
+    navigate(nav, param);
+  };
+
   return (
     <div className="s-header-container my-scrollable-element">
       <input
@@ -34,29 +41,49 @@ export default function Header() {
       />
       <nav className="nav-mobile">
         <Nav activeKey="/" onSelect={() => setChecked(false)}>
-          <div className="mobile-icon">
+          <div
+            className="mobile-icon"
+            onClick={() => handleNavigation(RouteUrl.Home)}
+          >
             <Logo />
           </div>
           <Nav.Item>
-            <Nav.Link href="/under-development">About</Nav.Link>
+            <Nav.Link
+              href=""
+              onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+            >
+              About
+            </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-1" href="/under-development">
+            <Nav.Link
+              href=""
+              onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+            >
               Services
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2" href="/under-development">
+            <Nav.Link
+              href=""
+              onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+            >
               Portfolio
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2" href="/under-development">
+            <Nav.Link
+              href=""
+              onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+            >
               Blog
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link eventKey="link-2" href="/under-development">
+            <Nav.Link
+              href=""
+              onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+            >
               Support
             </Nav.Link>
           </Nav.Item>
@@ -92,28 +119,50 @@ export default function Header() {
               onSelect={(selectedKey) => console.log(`selected ${selectedKey}`)}
             >
               <Nav.Item>
-                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link
+                  href=""
+                  onClick={() => handleNavigation(RouteUrl.Home)}
+                >
+                  Home
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="/under-development">About</Nav.Link>
+                <Nav.Link
+                  href=""
+                  onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+                >
+                  About
+                </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-1" href="/under-development">
+                <Nav.Link
+                  href=""
+                  onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+                >
                   Services
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-2" href="/under-development">
+                <Nav.Link
+                  href=""
+                  onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+                >
                   Portfolio
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-2" href="/under-development">
+                <Nav.Link
+                  href=""
+                  onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+                >
                   Blog
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-2" href="/under-development">
+                <Nav.Link
+                  href=""
+                  onClick={() => handleNavigation(RouteUrl.UnderDevelopment)}
+                >
                   Support
                 </Nav.Link>
               </Nav.Item>
