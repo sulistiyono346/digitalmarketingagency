@@ -1,3 +1,4 @@
+import React from "react";
 import Routes from "Config/Routes";
 import Theme from "Container/Pages/Theme";
 const App = () => {

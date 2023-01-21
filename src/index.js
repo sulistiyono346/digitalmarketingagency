@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import { store } from "Redux/Stores";
 import App from "Container/App/app";
 import "Assets/Styles/custom.scss";
+window.React = React;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

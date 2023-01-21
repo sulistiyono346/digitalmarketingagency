@@ -39,7 +39,7 @@ export default function OurServices() {
   ];
   return (
     <Container className="s-our-services justify-content-center align-items-center">
-      <H4 weight={700}>Our Services</H4>
+      <H4 weight="bold">Our Services</H4>
       <Text color="secondary" className="text-center">
         Increase your linkability, make tagging and bookmarking easy. Reward
         inbound links
@@ -48,7 +48,7 @@ export default function OurServices() {
         {services.map((val, key) => (
           <CardServices
             key={key}
-            icon={val.icon}
+            Icon={val.icon}
             label={val.label}
             alt={val.alt}
           />

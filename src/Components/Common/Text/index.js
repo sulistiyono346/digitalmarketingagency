@@ -4,7 +4,7 @@ import "./styless.scss";
 
 export default function Text({
   color,
-  weight = "400",
+  weight = "light",
   children,
   size = "fz-4",
   className,

@@ -8,7 +8,7 @@
     font-size: 12px;
   }
   @include colors-all-font;
-  &.400 {
+  .light {
     font-weight: 400;
   }
 }

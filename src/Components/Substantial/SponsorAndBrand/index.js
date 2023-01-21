@@ -1,8 +1,8 @@
 import React from "react";
-import { ReactComponent as Burberry } from "Assets/Images/sponsor-burberry.svg";
-import { ReactComponent as Chanel } from "Assets/Images/sponsor-chanel.svg";
-import { ReactComponent as Esprit } from "Assets/Images/sponsor-esprit.svg";
-import { ReactComponent as Groupe } from "Assets/Images/sponsor-groupe.svg";
+import Burberry from "Assets/Images/sponsor-burberry.svg";
+import Chanel from "Assets/Images/sponsor-chanel.svg";
+import Esprit from "Assets/Images/sponsor-esprit.svg";
+import Groupe from "Assets/Images/sponsor-groupe.svg";
 import "./styles.scss";
 import { Container, Stack } from "react-bootstrap";
 import useBreakpoint from "Config/Helpers/useBreakpoint";
